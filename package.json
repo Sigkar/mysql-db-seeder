@@ -1,6 +1,6 @@
 {
   "name": "mysql-db-seed",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Seed a mysql database similar to Laravel, Rails, and other platforms via the command line.",
   "main": "index.js",
   "scripts": {
@@ -15,5 +15,13 @@
   "dependencies": {
     "mysql": "^2.17.1"
   },
-  "devDependencies": {}
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Sigkar/mysql-db-seeder.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Sigkar/mysql-db-seeder/issues"
+  },
+  "homepage": "https://github.com/Sigkar/mysql-db-seeder#readme"
 }
