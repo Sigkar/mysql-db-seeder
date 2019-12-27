@@ -1,0 +1,19 @@
+{
+  "name": "mysql-db-seed",
+  "version": "0.0.1",
+  "description": "Seed a mysql database similar to Laravel, Rails, and other platforms via the command line.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "mysql",
+    "seeding"
+  ],
+  "author": "Sigkar",
+  "license": "MIT",
+  "dependencies": {
+    "mysql": "^2.17.1"
+  },
+  "devDependencies": {}
+}
