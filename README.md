@@ -7,7 +7,7 @@ Only support for MySQL
 ## Usage
 
 ### Installation
-`$ npm install --save-dev db_seed`
+`$ npm install --save-dev mysql-db-seed`
 
 ### Usage
 

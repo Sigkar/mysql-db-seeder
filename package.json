@@ -13,6 +13,7 @@
   "author": "Sigkar",
   "license": "MIT",
   "dependencies": {
+    "faker": "^4.1.0",
     "mysql": "^2.17.1"
   },
   "devDependencies": {},
