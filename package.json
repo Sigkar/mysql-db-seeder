@@ -4,7 +4,10 @@
   "description": "Seed a mysql database similar to Laravel, Rails, and other platforms.",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "cleanup": "node bin/cleanupFailures.js",
+    "pretest": "node bin/setupTests.js",
+    "test": "npx jest --passWithNoTests --verbose",
+    "posttest": "node bin/cleanupTests.js"
   },
   "keywords": [
     "mysql",
@@ -16,7 +19,13 @@
     "faker": "^4.1.0",
     "mysql": "^2.17.1"
   },
-  "devDependencies": {},
+  "devDependencies": {
+    "db-migrate": "^0.11.6",
+    "db-migrate-mysql": "^2.1.0",
+    "dotenv": "^8.2.0",
+    "jest": "^24.9.0",
+    "shelljs": "^0.8.3"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/Sigkar/mysql-db-seeder.git"

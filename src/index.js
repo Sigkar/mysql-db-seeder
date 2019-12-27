@@ -1,10 +1,11 @@
 const mysql = require("mysql");
 const faker = require("faker");
+const {getRandomInt} = require("./util/random");
 
 class Seeder {
   constructor(limit, host, user, password, database, locale = "en") {
     faker.locale = locale;
-    faker.seed(this.getRandomInt(100000000, 999999999));
+    faker.seed(getRandomInt(100000000, 999999999));
     this.connection = mysql.createPool({
       connectionLimit: limit, // default = 10
       host: host,
@@ -63,18 +64,6 @@ class Seeder {
       ids.push(id);
     }
     return ids;
-  }
-
-  getRandom(ids, percentChoice) {
-    return ids.filter(id => {
-      if (this.getRandomInt(1, 100) > percentChoice) return id;
-    });
-  }
-
-  getRandomInt(min, max) {
-    min = Math.ceil(min);
-    max = Math.floor(max);
-    return Math.floor(Math.random() * (max - min)) + min;
   }
 
   nativeTimestamp() {

@@ -62,6 +62,23 @@ Then,
 | mysqlObject       | Key-value pairs to generate a MySQL insert query|
 
 
+## Testing
+
+- First time?
+  - Create a MySQL user `mysql-db-seed` with the password `mysql-db-seed`
+  - Grant read/write to `mysql_db_seed_tests` table
+```sql
+CREATE USER 'mysql-db-seed'@'localhost' IDENTIFIED BY 'mysql-db-seed';
+GRANT ALL PRIVILEGES ON mysql_db_seed_tests.* TO 'mysql-db-seed'@'localhost';
+FLUSH PRIVILEGES;
+/* ensure the user was created */
+SELECT user,authentication_string,plugin,host FROM mysql.user;
+```
+
+- To run tests:
+  - `$ npm run test`
+
+
 ## TODO:
 - Tests
 - Update tables

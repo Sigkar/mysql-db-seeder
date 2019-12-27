@@ -1,0 +1,17 @@
+{
+	"setup": {
+		"driver":{"ENV":"DRIVER"},
+		"user":{"ENV":"USERNAME"},
+		"password": {"ENV":"PASSWORD"},
+		"host": {"ENV":"CONNECTION"},
+		"multipleStatements": {"ENV":"MULTIPLE_STATEMENTS"}
+	},
+	"dev": {
+		"driver":{"ENV":"DRIVER"},
+		"user":{"ENV":"USERNAME"},
+		"password": {"ENV":"PASSWORD"},
+		"host": {"ENV":"CONNECTION"},
+		"database": {"ENV":"DATABASE"},
+		"multipleStatements": {"ENV":"MULTIPLE_STATEMENTS"}
+  }
+}
