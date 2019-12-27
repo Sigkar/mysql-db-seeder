@@ -1,4 +1,4 @@
-# DB_SEED
+# mysql-db-seed
 
 Dead simple database seeding framework for NodeJS
 
@@ -17,7 +17,7 @@ Using Faker.JS:
 ```
 // dbseeder.js
 const faker = require("faker");
-const Seeder = require("db_seed").Seeder;
+const Seeder = require("mysql-db-seed").Seeder;
 // ES6 use `import {Seeder} from "mysql-db-seed";`
 
 // Generate a new Seeder instance
