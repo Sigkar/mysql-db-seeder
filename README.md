@@ -62,5 +62,10 @@ Then,
 | mysqlObject       | Key-value pairs to generate a MySQL insert query|
 
 
+## TODO:
+- Tests
+- Update tables
+- Callbacks for more insertions
+
 ## Author
 [Sigkar](https://github.com/sigkar)
