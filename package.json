@@ -1,6 +1,6 @@
 {
   "name": "mysql-db-seed",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "Seed a mysql database similar to Laravel, Rails, and other platforms via the command line.",
   "main": "index.js",
   "scripts": {
