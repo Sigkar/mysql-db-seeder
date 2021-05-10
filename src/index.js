@@ -39,7 +39,7 @@ class Seeder {
       process.stdout.write(".");
       values = Object.values(sqlObject).map(value => {
         if (typeof value === "function") {
-          return value();
+          return value(i);
         } else {
           return value;
         }
