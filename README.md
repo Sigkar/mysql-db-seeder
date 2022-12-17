@@ -1,3 +1,5 @@
+# This project is basically abandoned. I want to work on it, but the Cobbler goes without shoes. I just don't have time.
+
 # mysql-db-seed
 
 Dead simple database seeding framework for NodeJS
